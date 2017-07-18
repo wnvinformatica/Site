@@ -773,7 +773,7 @@
         <script src="js/jqBootstrapValidation.js"></script>
         <script src="js/contact_me.js"></script>
         <!-- google map -->
-        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6EUUQ9DSc3iyu0uNEcTYTYJbX-K5XA3Q&sensor=false"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEUj6vrjF8FbqP6bA87ej7b4rCNo_zbU8&sensor=false"></script>
         <!-- custom script -->
         <script src="js/scripts.js"></script>
        
