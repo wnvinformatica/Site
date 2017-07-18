@@ -10,6 +10,7 @@
   <!-- SITE TITLE -->
   <title>WNV Informática</title>
   <!-- STYLESHEETS -->
+  
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href="css/style.css" rel="stylesheet">
