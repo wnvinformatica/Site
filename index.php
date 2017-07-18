@@ -14,13 +14,14 @@
   <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href="css/style.css" rel="stylesheet">
   <link href="css/responsive.css" rel="stylesheet">
+  <link href="css/login.css" rel="stylesheet">
   <!-- DEMO COLORS  -->
   <link href="#" class="css-color" rel="stylesheet">
 
   <!-- FAVICON  -->
   <link rel="icon" href="img/icon1.ico">
-
-</head>
+  
+  </head>
     <body>
         <!-- PRELOADER -->
         <div id="preloader">
@@ -135,17 +136,35 @@
                         <li>
                             <a class="page-scroll" href="#contact">Contato</a>
                         </li>
-                        <li class="dropdown">
-                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                         <ul class="dropdown-menu">
-                           <li><a href="#">Action</a></li>
-                           <li><a href="#">Another action</a></li>
-                           <li><a href="#">Something else here</a></li>
-                           <li role="separator" class="divider"></li>
-                           <li><a href="#">Separated link</a></li>
-                         </ul>
-                        </li>
-                    </ul>
+                        <li> <!-- LOGIN DO SITE -->
+                         <div id="bar">
+                    <!-- Login Starts Here -->
+                    <div id="container">
+            <div id="loginContainernovo">
+                <a href="#" id="loginButtonnovo"><span>Login</span></a>
+                <div style="clear:both"></div>
+                <div id="loginBoxnovo">                
+                    <form id="loginFormnovo">
+                        <fieldset id="bodynovo">
+                            <fieldset>
+                                <label for="login">Usúario</label>
+                                <input type="text" name="email" id="email" />
+                            </fieldset>
+                            <fieldset>
+                                <label for="password">Senha</label>
+                                <input type="password" name="password" id="password" />
+                            </fieldset>
+                            <input type="submit" id="login" value="Entrar" />
+                            
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <!-- Login Ends Here -->
+        </div>
+        </div>
+                            </li> <!-- FIM DO LOGIN DO SITE -->
+                    
                     <!-- END MAIN NAV LINKS -->
                 </div>
             </div>
@@ -155,7 +174,7 @@
         <header id="header">
             <div class="container">
                 <div class="intro-text">
-                    <h1 class="intro-lead-in">Create your app page with KeySoft</h1>
+                    <h1 class="intro-lead-in">Seu desafio é o nosso progresso</h1>
                     <span class="intro-heading">A better way to present your app using fully featured appsperia template. </span>
                     <div class="header-buttons">
                         <a href="http://themeforest.net/item/keysoft-software-landing-page/13766006" target="_blank"  class="primary-button">Buy Now</a>
@@ -760,7 +779,7 @@
         </footer>
         <!-- END FOOTER -->
         <!-- SCRIPTS -->
-        <!-- jQuery & Bootstrap -->
+                <!-- jQuery & Bootstrap -->
         <script src="js/jquery.js"></script>
         <script src="js/jquery.easing.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
@@ -782,5 +801,29 @@
         <!-- custom script -->
         <script src="js/scripts.js"></script>
         <script type="text/javascript" src="js/main.js" charset="UTF-8"></script>
+        
+        <!-- LOGIN  -->
+        <script type="text/javascript">
+        $(function() {
+    var button = $('#loginButtonnovo');
+    var box = $('#loginBoxnovo');
+    var form = $('#loginFormnovo');
+    button.removeAttr('href');
+    button.mouseup(function(login) {
+        box.toggle();
+        button.toggleClass('active');
+    });
+    form.mouseup(function() { 
+        return false;
+    });
+    $(this).mouseup(function(login) {
+        if(!($(login.target).parent('#loginButtonnovo').length > 0)) {
+            button.removeClass('active');
+            box.hide();
+        }
+    });
+});
+        </script>
+        
     </body>
 </html>
